@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  unit_test_windows:
+  test:
     runs-on: windows-latest
     permissions: write-all
     steps:
@@ -31,4 +31,4 @@ jobs:
           cmake --build . --config Release
           
       - name: Test project
-        run: cd Release && GithubUnfollowersChecker.exe ProphetRu
+        run: D:\a\GithubUnfollowersChecker\GithubUnfollowersChecker\Release\GithubUnfollowersChecker.exe ProphetRu
